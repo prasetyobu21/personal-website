@@ -150,7 +150,7 @@ const App = () => {
 
       <div>
         <Switch>
-          <Route exact path="/personal-website">
+          <Route exact path="/">
 
             <button className="circlebutton" onClick={nextButton} >
               <div className="arrow"></div>
