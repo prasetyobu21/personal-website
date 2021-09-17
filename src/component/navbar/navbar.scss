@@ -1,0 +1,24 @@
+.nav{
+    padding-top: 1.5em;
+    display: block;
+    clear: both;
+
+    a{
+        font-size: 0.9em;
+        color: white;
+    }
+    
+    .webtitle{
+            font-weight: bold;
+            width: auto;
+            float: left;
+    }
+
+    .href{
+            font-weight: normal;
+            text-align: end;
+            float: right;
+            margin-left:1em ;
+            text-decoration: none;
+    }
+}

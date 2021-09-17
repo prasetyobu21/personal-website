@@ -1,0 +1,16 @@
+.competences-image {
+  height: 5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.competences-title {
+  text-align: center;
+  color: white;
+}
+
+.competences-container {
+  margin-top: 25vh;
+}
+/*# sourceMappingURL=Competences.css.map */

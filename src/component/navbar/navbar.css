@@ -1,0 +1,25 @@
+.nav {
+  padding-top: 1.5em;
+  display: block;
+  clear: both;
+}
+
+.nav a {
+  font-size: 0.9em;
+  color: white;
+}
+
+.nav .webtitle {
+  font-weight: bold;
+  width: auto;
+  float: left;
+}
+
+.nav .href {
+  font-weight: normal;
+  text-align: end;
+  float: right;
+  margin-left: 1em;
+  text-decoration: none;
+}
+/*# sourceMappingURL=navbar.css.map */

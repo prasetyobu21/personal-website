@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,CAAC;EACR,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,EAAE;EACX,GAAG,EAAE,CAAC;CACP",
+    "sources": [
+        "UxPortfolio.scss"
+    ],
+    "names": [],
+    "file": "UxPortfolio.css"
+}

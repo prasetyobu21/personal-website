@@ -1,0 +1,410 @@
+$primary-color: #313140;
+$breakpoint-tablet: 768px;
+
+@mixin list {
+  margin-top: 25vh;
+  margin-right: 10vw;
+  li {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 1em;
+    font-size: 3em;
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 450;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@mixin outline-main-text {
+  color: $primary-color;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-size: 5em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.landing-screen{
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  letter-spacing: 0.1em;
+}
+
+body {
+  background-color: $primary-color;
+  position: relative;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.flexx {
+  display: flex;
+  height: 100vh;
+
+  .col10 {
+    float: left;
+    width: 10%;
+  }
+
+  .col90 {
+    float: left;
+    width: 90%;
+  }
+
+  .col25 {
+    float: left;
+    margin-left: 5vw;
+    width: 15%;
+  }
+
+  .col20 {
+    float: left;
+    width: 20%;
+  }
+}
+
+.imageTitle {
+  height: 100vh;
+  width: auto;
+}
+
+.centerButton {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 1;
+}
+.circlebutton {
+  margin-top: 8em;
+  width: 4vw;
+  height: 4vw;
+  background-color: white;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 5vh;
+  left: 48%;
+  z-index: 1;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  border-style: solid;
+  border-color: white;
+  transition: all 0.1s ease-out;
+
+  &.back-button{
+    background-color: $primary-color;
+  }
+
+  &:active{
+    background-color: rgb(228, 228, 228);
+    transform: scale(.9)
+  }
+
+  .arrow{
+    width: .5vw;
+    height: .5vw;
+    border-color: $primary-color;
+    border-style: solid;
+    border-top: 2px;
+    border-left: 2px;
+    transform: rotate(45deg);
+    margin-left: 41%;
+  }
+  .back-arrow{
+    width: .5vw;
+    height: .5vw;
+    border-color: white;
+    border-style: solid;
+    border-top: 2px;
+    border-right: 2px;
+    transform: rotate(45deg);
+    margin-left: 43%;
+  }
+}
+
+.main-list {
+  @include list();
+  margin-top: 25vh;
+  li {
+    font-size: 3em;
+  }
+}
+
+.center-small-list {
+  @include list();
+  margin-top: 5vh;
+  li {
+    font-size: 1.5em;
+  }
+}
+
+.vl {
+  border-right: 1.5px solid white;
+  height: 50vh;
+  right: 2vw;
+  position: fixed;
+  z-index: 1;
+  margin-top: 25vh;
+  display: block;
+}
+
+.progress {
+  right: 0;
+  color: white;
+  position: fixed;
+  margin-right: 3vw;
+  margin-top: 25vh;
+  z-index: 1;
+  width: 20vw;
+
+  li {
+    text-align: right;
+    margin-top: 2em;
+    font-size: 1.3em;
+  }
+}
+
+.hoverEffect {
+  padding: 0 5px;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all 0.6s ease-in-out;
+  opacity: 0.5;
+
+  &:hover {
+    box-shadow: inset -200px 0 0 white;
+    color: $primary-color;
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.progressBar {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms ease-in-out;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  transition-delay: 1s;
+}
+
+.reachMeOut {
+  @include outline-main-text();
+  margin-top: 25vh;
+  text-align: center;
+  margin-right: 6.5vw;
+}
+
+.landingname{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 3vh;
+    letter-spacing: 0.05em;
+}
+
+.hello {
+  @include outline-main-text();
+  margin-top: 25vh;
+  margin-bottom: 0;
+}
+
+.aboutMe {
+  color: white;
+  font-size: 1.5em;
+  max-width: 50vw;
+}
+
+.landing-words {
+  @include outline-main-text();
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 25vh;
+}
+
+.animatedTitle {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedName {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.small-text-contact{
+  text-align: center;
+  color: white;
+  margin-top: 10vh;
+  margin-right: 8vw;
+  font-size: 1.1em;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.image-portfolio-container{
+  height: 250px;
+  width: 250px;
+  opacity: 1;
+  margin-top: 30vh;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    height: 270px;
+    width: 270px;
+  }
+  
+  &.more-portfolio:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+
+    p{
+      color: $primary-color;
+    }
+  }
+}
+
+.img-title{
+  font-size: 1em;
+  margin-top: 1em;
+  color: white;
+
+  &.more-text{   
+    margin-top: 45%;
+    text-align: center;
+  }
+}
+
+@mixin circle-portfolio-button {
+    width: 3vw;
+    height: 3vw;
+    color: $primary-color;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100px;
+    position: fixed;
+    z-index: inherit;
+    display: inline-block;
+}
+
+.more-back-container{
+  width: 10vw;
+  position: fixed;
+  z-index: 1;
+  bottom: 15vh;
+  left: 40%;
+  display: inherit;
+
+  .more-button{
+    @include circle-portfolio-button();
+    margin-left: 15%;
+    cursor: pointer;
+    p{
+      margin-left: -3em;
+    }
+  }
+
+  .back-button{
+    @include circle-portfolio-button();
+    margin-left: 1%;
+    cursor: pointer;
+    p{
+      margin-left: 4em;
+    }
+  }
+
+  p{
+    color: white;
+    font-size: 1.2em;
+    margin-left: 60%;
+  }
+}
+
+.portfolio-accent {
+  height: 100vh;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
