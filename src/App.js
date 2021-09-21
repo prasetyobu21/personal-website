@@ -11,6 +11,8 @@ import Contact from './Contact/Contact';
 import Competences from './Competences/Competences';
 import UxPortfolio from './UxPortfolio/UxPortfolio';
 import GraphicDesignPortfolio from './GraphicDesignPortfolio/GarphicDesignPortfolio';
+import AndroidPortflolio from './AndroidPortfolio/AndroidPortfolio';
+import WebDevPortfolio from './WebDevPortfolio/WebDevPortfolio';
 import { useEffect, useRef, useState } from 'react';
 import { useWindowScroll } from "react-use";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -129,6 +131,14 @@ const App = () => {
     }
   }
 
+  var buttonState;
+  if (currentState === 'contact') {
+    buttonState = { opacity: 0 }
+  }
+  else {
+    buttonState = { opacity: 1 }
+  }
+
   //Reset state when reload
   const backToTop = () => window.addEventListener("beforeunload", event => {
     window.scrollTo(0, 0)
@@ -152,7 +162,7 @@ const App = () => {
         <Switch>
           <Route exact path="/">
 
-            <button className="circlebutton" onClick={nextButton} >
+            <button className="circlebutton" onClick={nextButton} style={buttonState}>
               <div className="arrow"></div>
             </button>
 
@@ -208,11 +218,13 @@ const App = () => {
 
         <Switch>
           <Route exact path="/web-development">
+            <WebDevPortfolio />
           </Route>
         </Switch>
 
         <Switch>
           <Route exact path="/android-development">
+            <AndroidPortflolio />
           </Route>
         </Switch>
 

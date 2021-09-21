@@ -11,8 +11,8 @@ const PortfolioGallery = () => {
             <div className="col90">
                 <ul className="main-list">
                     <li><a href="/ux-design">UX DESIGN</a></li>
-                    <li><a href="">WEB DEVELOPMENT</a></li>
-                    <li><a href="">ANDROID DEVELOPMENT</a></li>
+                    <li><a href="/web-development">WEB DEVELOPMENT</a></li>
+                    <li><a href="/android-development">ANDROID DEVELOPMENT</a></li>
                     <li><a href="/graphic-design">GRAPHIC & LOGO DESIGN</a></li>
                 </ul>
             </div>
