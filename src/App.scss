@@ -1,5 +1,6 @@
 $primary-color: #313140;
 $breakpoint-tablet: 768px;
+$breakpoint-phone: 321px;
 
 @mixin list {
   margin-top: 25vh;
@@ -27,6 +28,10 @@ $breakpoint-tablet: 768px;
   font-size: 5em;
   font-weight: 800;
   letter-spacing: 0.1em;
+
+  @media(max-width: $breakpoint-tablet){
+    font-size: 3em;
+  }
 }
 
 .landing-screen{
@@ -76,6 +81,20 @@ body {
     float: left;
     width: 20%;
   }
+
+  @media(max-width: $breakpoint-tablet){
+    .col20, .col25, .col90{
+      width: 100%;
+
+      &.competences-icon{
+        width: 30%;
+      }
+    }
+
+    .col10{
+      display: none;
+    }
+  }
 }
 
 .imageTitle {
@@ -87,6 +106,7 @@ body {
   margin: 0;
   position: absolute;
   left: 50%;
+  right: 50%;
   -ms-transform: translate(-50%);
   transform: translate(-50%);
   z-index: 1;
@@ -136,6 +156,17 @@ body {
     transform: rotate(45deg);
     margin-left: 43%;
   }
+
+  @media (max-width: $breakpoint-tablet){
+    width: 8vw;
+    height: 8vw;
+
+    .arrow{
+      width: 1vw;
+      height: 1vw;
+      margin-left: 37%
+    }
+  }
 }
 
 .main-list {
@@ -143,6 +174,14 @@ body {
   margin-top: 25vh;
   li {
     font-size: 3em;
+
+  }
+
+  @media(max-width: $breakpoint-tablet){
+    margin-top: 35vh;
+    li{
+      font-size: 1.5em
+    }
   }
 }
 
@@ -151,6 +190,10 @@ body {
   margin-top: 5vh;
   li {
     font-size: 1.5em;
+
+    @media(max-width: $breakpoint-tablet){
+      font-size: 1em;
+    }
   }
 }
 
@@ -242,6 +285,10 @@ body {
   right: 0;
   z-index: 1;
   transition-delay: 1s;
+
+  @media(max-width: $breakpoint-tablet){
+    display: none;
+  }
 }
 
 .reachMeOut {
@@ -258,18 +305,31 @@ body {
     font-size: 2.5em;
     margin-top: 3vh;
     letter-spacing: 0.05em;
+
+    @media(max-width: $breakpoint-tablet){
+      font-size: 1.5em;
+    }
 }
 
 .hello {
   @include outline-main-text();
   margin-top: 25vh;
   margin-bottom: 0;
+
+  @media(max-width: $breakpoint-tablet){
+    font-size: 3em;
+  }
 }
 
 .aboutMe {
   color: white;
   font-size: 1.5em;
   max-width: 50vw;
+
+  @media(max-width: $breakpoint-tablet){
+    max-width: 90vw;
+    font-size: 1em;
+  }
 }
 
 .landing-words {

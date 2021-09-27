@@ -49,6 +49,18 @@ body {
   width: 20%;
 }
 
+@media (max-width: 768px) {
+  .flexx .col20, .flexx .col25, .flexx .col90 {
+    width: 100%;
+  }
+  .flexx .col20.competences-icon, .flexx .col25.competences-icon, .flexx .col90.competences-icon {
+    width: 30%;
+  }
+  .flexx .col10 {
+    display: none;
+  }
+}
+
 .imageTitle {
   height: 100vh;
   width: auto;
@@ -58,6 +70,7 @@ body {
   margin: 0;
   position: absolute;
   left: 50%;
+  right: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 1;
@@ -116,6 +129,18 @@ body {
   margin-left: 43%;
 }
 
+@media (max-width: 768px) {
+  .circlebutton {
+    width: 8vw;
+    height: 8vw;
+  }
+  .circlebutton .arrow {
+    width: 1vw;
+    height: 1vw;
+    margin-left: 37%;
+  }
+}
+
 .main-list {
   margin-top: 25vh;
   margin-right: 10vw;
@@ -143,6 +168,15 @@ body {
   font-size: 3em;
 }
 
+@media (max-width: 768px) {
+  .main-list {
+    margin-top: 35vh;
+  }
+  .main-list li {
+    font-size: 1.5em;
+  }
+}
+
 .center-small-list {
   margin-top: 25vh;
   margin-right: 10vw;
@@ -168,6 +202,12 @@ body {
 
 .center-small-list li {
   font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .center-small-list li {
+    font-size: 1em;
+  }
 }
 
 .vl {
@@ -286,6 +326,12 @@ body {
           transition-delay: 1s;
 }
 
+@media (max-width: 768px) {
+  .progressBar {
+    display: none;
+  }
+}
+
 .reachMeOut {
   color: #313140;
   -webkit-text-stroke-width: 1px;
@@ -298,6 +344,12 @@ body {
   margin-right: 6.5vw;
 }
 
+@media (max-width: 768px) {
+  .reachMeOut {
+    font-size: 3em;
+  }
+}
+
 .landingname {
   color: white;
   font-weight: 500;
@@ -305,6 +357,12 @@ body {
   font-size: 2.5em;
   margin-top: 3vh;
   letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .landingname {
+    font-size: 1.5em;
+  }
 }
 
 .hello {
@@ -318,10 +376,29 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  .hello {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hello {
+    font-size: 3em;
+  }
+}
+
 .aboutMe {
   color: white;
   font-size: 1.5em;
   max-width: 50vw;
+}
+
+@media (max-width: 768px) {
+  .aboutMe {
+    max-width: 90vw;
+    font-size: 1em;
+  }
 }
 
 .landing-words {
@@ -334,6 +411,12 @@ body {
   text-align: center;
   margin-bottom: 0;
   margin-top: 25vh;
+}
+
+@media (max-width: 768px) {
+  .landing-words {
+    font-size: 3em;
+  }
 }
 
 .animatedTitle {

@@ -9,7 +9,7 @@ const Competences = () => {
                 <img className="imageTitle" src="/images/competences.png" />
             </div>
             <div className="col90 competences-container">
-                <div className="col25">
+                <div className="col25 competences-icon">
                     <img src="/images/kotlin.png" alt="" className="competences-image" />
                     <p className="competences-title">Android Development (Kotlin)</p>
 
@@ -17,7 +17,7 @@ const Competences = () => {
                     <p className="competences-title">React Js</p>
                 </div>
 
-                <div className="col25">
+                <div className="col25 competences-icon">
                     <img src="/images/nodejs.png" alt="" className="competences-image" />
                     <p className="competences-title">Node.js</p>
 
@@ -25,7 +25,7 @@ const Competences = () => {
                     <p className="competences-title">Sass</p>
                 </div>
 
-                <div className="col25">
+                <div className="col25 competences-icon">
                     <img src="/images/codeigniter.png" alt="" className="competences-image" />
                     <p className="competences-title">Codeigniter</p>
 
@@ -33,7 +33,7 @@ const Competences = () => {
                     <p className="competences-title">PHP</p>
                 </div>
 
-                <div className="col25">
+                <div className="col25 competences-icon">
                     <img src="/images/figma.png" alt="" className="competences-image" />
                     <p className="competences-title">UX Design</p>
 
