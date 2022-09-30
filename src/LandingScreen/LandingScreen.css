@@ -25,28 +25,22 @@
 
 @keyframes fadeInUp {
   from {
-    -webkit-transform: translate3d(0, 40px, 0);
-            transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeInUp {
   from {
-    -webkit-transform: translate3d(0, 40px, 0);
-            transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 .animatedTitle {
   animation-duration: 1.5s;
   animation-fill-mode: both;
@@ -69,5 +63,4 @@
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
-}
-/*# sourceMappingURL=LandingScreen.css.map */
+}/*# sourceMappingURL=LandingScreen.css.map */

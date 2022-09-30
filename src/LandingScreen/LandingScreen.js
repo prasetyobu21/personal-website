@@ -3,12 +3,16 @@ import reactDom from "react-dom";
 // import './LandingScreen.css'
 
 const LandingScreen = () => {
-    return (
-        <div className="landing-screen">
-            <h1 className="landing-words animatedTitle animatedFadeInUp fadeInUp">DESIGNER & <br />SOFTWARE <br /> DEVELOPER</h1>
-            <h3 className="landingname animatedName animatedFadeInUp fadeInUp">PRASETYO BUDI UTOMO</h3>
-        </div>
-    )
-}
+  return (
+    <div className="landing-screen">
+      <h3 className="landing-words animatedTitle animatedFadeInUp fadeInUp">
+        UI/UX DESIGNER & RESEARCHER
+      </h3>
+      <h1 className="landingname animatedName animatedFadeInUp fadeInUp">
+        Prasetyo Utomo
+      </h1>
+    </div>
+  );
+};
 
-export default LandingScreen
+export default LandingScreen;

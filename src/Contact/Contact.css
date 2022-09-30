@@ -7,7 +7,6 @@
   margin-top: 5vh;
   margin-right: 10vw;
 }
-
 .contact ul li {
   text-align: center;
   list-style-type: none;
@@ -15,7 +14,6 @@
   font-size: 1.5em;
   letter-spacing: 0.1em;
 }
-
 .contact ul li a {
   text-decoration: none;
   color: white;
@@ -32,5 +30,4 @@
   letter-spacing: 0.1em;
   text-align: center;
   margin-right: 6.5vw;
-}
-/*# sourceMappingURL=Contact.css.map */
+}/*# sourceMappingURL=Contact.css.map */
